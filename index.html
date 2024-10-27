@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
     <title>Notifications</title>
 </head>
 <body>
-    
+    <section class="container">
+        <header>
+            <h1>Notifications <span class="notificationCount" id="notificationCount">0</span></h1>
+            <button type="button" class="markAllAsRead" id="markAll">Mark all as read</button>
+        </header>
+        <main class="notificationContainer">
+            <ul class="notificationList">
+
+                <li>
+                    <div class="notification unread">
+                        <div class="avatar"><img src="images/avatar-mark-webber.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span></p>
+                            <span class="time">1m ago</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification unread">
+                        <div class="avatar"><img src="images/avatar-angela-gray.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Angela Gray </span>followed you</p>
+                            <span class="time">5m ago</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification unread">
+                        <div class="avatar"><img src="images/avatar-jacob-thompson.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Jacob Thompson </span>has joined your group <span class="group">Chess Club</span></p>
+                            <span class="time">1 day ago</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification">
+                        <div class="avatar private"><img src="images/avatar-rizky-hasanuddin.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Rizky Hasanuddin </span>sent you a private message</p>
+                            <span class="time">5 day ago</span>
+                            <div class="privateMsg">
+                                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification">
+                        <div class="avatar"><img src="images/avatar-kimberly-smith.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Kimberly Smith </span>commented on your picture</p>
+                            <span class="time">1 week ago</span>
+                        </div>
+                        <div class="notificationImage"><img src="images/image-chess.webp" alt="chess player image"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification">
+                        <div class="avatar"><img src="images/avatar-nathan-peterson.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></p>
+                            <span class="time">2 weeks ago</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notification">
+                        <div class="avatar"><img src="images/avatar-jacob-thompson.webp" alt="pfp image"></div>
+                        <div class="notificationDetails">
+                            <p><span class="name">Anna Kim </span>left the group <span class="group">Chess Club</span></p>
+                            <span class="time">2 weeks ago</span>
+                        </div>
+                    </div>
+                </li>                
+
+            </ul>
+        </main>
+    </section>    
 </body>
 </html>

@@ -6,4 +6,158 @@
 }
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+    padding: 1rem 0;
+    font-size: clamp(.9rem, 5vw, 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    display: flex;
+    gap: .5rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.container {
+    width: 95%;
+    max-width: 375px;
+}
+.notificationCount{
+    color: white;
+    padding: .9rem .9rem;
+    line-height: 0;
+    font-size: 1.1rem;
+    background-color: hsl(219, 85%, 26%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.markAllAsRead{
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: clamp(.8rem, 3.5vw, 1rem );
+    color: hsl(219, 85%, 26%);
+    padding: .5rem 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+.name {
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+.name:hover{
+    color: hsl(219, 85%, 26%);
+}
+.group{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    cursor: pointer;
+}
+.post {
+    font-weight: 800;
+    cursor: pointer;
+}
+.post:hover{
+    color: hsl(219, 85%, 26%);
+}
+.time {
+    color: hsl(219, 14%, 63%);
+    font-size: .9rem;
+}
+.notificationList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.notification{
+    display: flex;
+    gap: 1rem;
+    padding: .8rem;
+    border-radius: 10px;
+}
+.notification.unread{
+    background-color: hsl(210, 60%, 98%);
+}
+.notification.unread p{
+    position: relative;
+}
+.notification.unread p::after{
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    border-radius: 100%;
+    margin-left: 7px;
+    margin-top: 7px;
+
+}
+.avatar img{
+    width: 2rem;
+
+}
+.notificationDetails{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.privateMsg{
+    padding: 1rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.privateMsg:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.notificationImage{
+    display: flex;
+    margin-left: auto;
+}
+.notificationImage img {
+    width: 2.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+
+@media screen and (min-width:767px){
+    body{
+        background-color: hsl(210, 60%, 98%);
+        min-height: 100vh;
+        padding: 1.5rem;
+
+    }
+    .container{
+        max-width:40rem;
+        background-color: white;
+        padding:1rem 1.7rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 20px hsl(211, 68%, 94%);
+    }
+}
+
+@media screen and (min-width:1439px){
+    body {
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 48rem;
+    }
 }
